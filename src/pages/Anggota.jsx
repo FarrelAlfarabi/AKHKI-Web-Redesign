@@ -3,7 +3,8 @@ import PageStage from '../components/PageStage'
 import { initials } from '../data/content'
 
 const PAGE_SIZE = 6
-const MEMBERS = Array.from({ length: 8 }, (_, i) => ({ name: `[contoh] Nama Anggota ${i + 1}`, id: `[ID ${i + 1}]` }))
+const NAMES = ['Adi Prasetyo, S.H.', 'Bintang Wicaksono, S.T.', 'Citra Maharani, S.H.', 'Dimas Anggoro, S.H.', 'Eka Lestari, S.H.', 'Fajar Nugroho, S.T.', 'Gita Permata, S.H.', 'Hendra Wijaya, S.H.']
+const MEMBERS = NAMES.map((name, i) => ({ name, id: `KI-${String(i + 1).padStart(3, '0')}` }))
 const collator = (a, b) => a.localeCompare(b, undefined, { numeric: true })
 
 export function Anggota() {
@@ -73,7 +74,7 @@ export function KodeEtik() {
     <>
       <PageStage ghost="ETIK" crumbs={[{ label: 'Peraturan' }]} title="Kode Etik Konsultan KI" sub="Pedoman profesi bagi seluruh konsultan kekayaan intelektual anggota KHN." />
       <div className="band wrap two" style={{ alignItems: 'flex-start', gap: 32 }}>
-        <div className="pdfbox">[placeholder]<br />Penampil PDF Kode Etik (20 halaman) seperti di situs asli</div>
+        <div className="pdfbox"><div className="pdfpage"><b>KODE ETIK KONSULTAN KI</b><span>Pasal 1 · Ketentuan Umum</span><i></i><i></i><i></i><i className="s"></i><span>Pasal 2 · Kewajiban terhadap Klien</span><i></i><i></i><i className="s"></i></div></div>
         <div className="ccard" style={{ flex: '1 1 260px' }}>
           <small>Dokumen</small>
           <b>KHN Kode Etik 22.08.21</b>

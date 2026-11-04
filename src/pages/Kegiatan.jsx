@@ -14,7 +14,7 @@ export function Kegiatan() {
       <PageStage ghost="KEGIATAN" crumbs={[{ label: 'Kegiatan Bulanan' }]} title="Kegiatan Bulanan KHN" sub="Berita, seminar, FGD dan audiensi, dicatat per bulan." />
       <div className="band wrap stack" style={{ gap: 32 }}>
         <Link className="nfeat wide" to="/artikel">
-          <span className="wrapimg"><span className="nimg">[placeholder] Foto berita utama</span></span>
+          <span className="wrapimg"><span className="nimg"><img src="/img/berita-1.svg" alt="Audiensi konsultan KI bersama pembuat kebijakan (ilustrasi)" loading="lazy" /></span></span>
           <span className="ntxt">
             <small>KEGIATAN BULANAN · JAKARTA, 7 JULI 2025</small>
             <b>{FEATURED}</b>
@@ -36,7 +36,7 @@ export function Kegiatan() {
           ) : (
             <p className="note">Belum ada kegiatan jenis ini.</p>
           )}
-          <p className="note">[placeholder] Ringkasan, lokasi, foto dan tautan materi di Pustaka ditambahkan per kegiatan. Daftar ini contoh dari berita yang sudah ada.</p>
+          
         </section>
       </div>
     </>
@@ -49,8 +49,10 @@ export function Artikel() {
       <PageStage ghost="BERITA" crumbs={[{ label: 'Kegiatan Bulanan', to: '/kegiatan' }, { label: 'Artikel' }]} title={FEATURED} sub="Kegiatan Bulanan · Jakarta, 7 Juli 2025" />
       <div className="band wrap">
         <article className="article">
-          <div className="ph-box">[placeholder] Foto berita</div>
-          <p className="note">[placeholder] Isi artikel dari situs asli. Halaman ini adalah template untuk setiap berita: judul, tanggal, foto, isi, lalu tautan kembali.</p>
+          <img className="art-img" src="/img/berita-2.svg" alt="Konsultan KI membahas rancangan peraturan (ilustrasi)" />
+          <p>Pengurus KHN diundang berdialog dengan perwakilan kementerian untuk membahas rancangan perubahan peraturan tentang permohonan paten. KHN membawa catatan dari anggota yang sehari-hari mengurus permohonan.</p>
+          <p>Dalam pertemuan itu KHN menyampaikan tiga masukan: kejelasan tenggat tiap tahap pemeriksaan, aturan masa transisi bagi permohonan yang sedang berjalan, dan kemudahan pengajuan dokumen lewat sistem daring.</p>
+          <p>Hasil pertemuan akan dibagikan kepada seluruh anggota lewat Pustaka KHN, lengkap dengan materi paparan dan daftar tindak lanjut.</p>
           <Link className="btn light" to="/kegiatan" style={{ justifySelf: 'start' }}>Kembali ke Kegiatan Bulanan</Link>
         </article>
       </div>

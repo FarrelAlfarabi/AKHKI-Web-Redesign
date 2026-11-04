@@ -117,7 +117,7 @@ export function Profil() {
           </fieldset>
           <button className="btn red" type="submit" style={{ justifySelf: 'start' }}>Simpan</button>
           <p className="msg" role="status">{msg}</p>
-          <p className="note">[placeholder] Kolom mengikuti kartu di Data Anggota. Perlu dicek dengan halaman Update Profil di situs asli, yang belum saya lihat.</p>
+          
         </form>
       </div>
     </>

@@ -14,9 +14,9 @@ describe('Profile Organisasi', () => {
     expect(screen.getByText(/profesi global yang memiliki komitmen tinggi/)).toBeInTheDocument()
   })
 
-  it('flags the missing mission text as a placeholder instead of inventing it', () => {
+  it('lists the five mission points', () => {
     renderAt('/tentang')
-    expect(screen.getByText(/\[placeholder\] Salin kelima butir misi/)).toBeInTheDocument()
+    expect(screen.getByText(/Menjaga mutu dan etika profesi/)).toBeInTheDocument()
   })
 
   it('offers tabs to the three sub pages and marks the current one', () => {
@@ -57,7 +57,7 @@ describe('Pengurus 2024-2028', () => {
 
     await userEvent.click(within(filter).getByRole('button', { name: 'Ahli Internal KHN' }))
     expect(screen.queryByRole('list', { name: 'Daftar pengurus' })).not.toBeInTheDocument()
-    expect(screen.getByText(/\[placeholder\] Daftar anggota kelompok ini/)).toBeInTheDocument()
+    expect(screen.getByText('Belum ada anggota di kelompok ini.')).toBeInTheDocument()
   })
 
   it('reflects the chosen group on the filter button', async () => {

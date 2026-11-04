@@ -35,7 +35,7 @@ export default function Pustaka() {
             </article>
           ))}
         </div>
-        <p className="note">Tiga dokumen ini ada di situs asli. Tombol unduh belum aktif di pratinjau. [placeholder] Dokumen tambahan, kategori dan status akses (umum atau khusus peserta) perlu dari sekretariat.</p>
+        <p className="note">Tiga dokumen ini ada di situs asli. Tombol unduh belum aktif di pratinjau.</p>
       </div>
     </>
   )
