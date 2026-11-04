@@ -12,7 +12,7 @@ describe('site shell', () => {
 
   it('links the logo to the home page', () => {
     renderAt('/pustaka')
-    expect(screen.getByRole('link', { name: /AKHKI, ke beranda/i })).toHaveAttribute('href', '/')
+    expect(screen.getByRole('link', { name: /KHN, ke beranda/i })).toHaveAttribute('href', '/')
   })
 
   it('offers member links Anggota, Kode Etik and Masuk above the menu', () => {
@@ -38,7 +38,7 @@ describe('site shell', () => {
     renderAt('/')
     const nav = screen.getByRole('navigation', { name: 'Menu utama' })
     await userEvent.click(within(nav).getByRole('link', { name: 'Toko' }))
-    expect(screen.getByRole('heading', { level: 1, name: 'Toko AKHKI' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'Toko KHN' })).toBeInTheDocument()
   })
 
   it('shows a not-found page with a way home for unknown addresses', () => {
@@ -54,10 +54,10 @@ describe('site shell', () => {
   })
 
   it.each([
-    ['/', 'AKHKI | Asosiasi Konsultan Hak Kekayaan Intelektual Indonesia'],
-    ['/pustaka', 'Pustaka | AKHKI'],
-    ['/struktur', 'Struktur Organisasi | AKHKI'],
-    ['/tidak-ada', 'Halaman tidak ditemukan | AKHKI'],
+    ['/', 'KHN | Perkumpulan Konsultan HKI Nusantara'],
+    ['/pustaka', 'Pustaka | KHN'],
+    ['/struktur', 'Struktur Organisasi | KHN'],
+    ['/tidak-ada', 'Halaman tidak ditemukan | KHN'],
   ])('sets the browser tab title for %s', (path, title) => {
     renderAt(path)
     expect(document.title).toBe(title)

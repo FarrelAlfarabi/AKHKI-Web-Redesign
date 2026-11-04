@@ -3,7 +3,7 @@ import userEvent from '@testing-library/user-event'
 import { renderAt } from '../test/renderApp'
 
 describe('Profile Organisasi', () => {
-  it('states when and why AKHKI was founded', () => {
+  it('states when and why KHN was founded', () => {
     renderAt('/tentang')
     expect(screen.getByRole('heading', { level: 1, name: 'Profile Organisasi' })).toBeInTheDocument()
     expect(screen.getByText(/didirikan pada tanggal 15 September 2006/)).toBeInTheDocument()
@@ -55,7 +55,7 @@ describe('Pengurus 2024-2028', () => {
     const list = screen.getByRole('list', { name: 'Daftar pengurus' })
     expect(within(list).getAllByRole('listitem')).toHaveLength(5)
 
-    await userEvent.click(within(filter).getByRole('button', { name: 'Ahli Internal AKHKI' }))
+    await userEvent.click(within(filter).getByRole('button', { name: 'Ahli Internal KHN' }))
     expect(screen.queryByRole('list', { name: 'Daftar pengurus' })).not.toBeInTheDocument()
     expect(screen.getByText(/\[placeholder\] Daftar anggota kelompok ini/)).toBeInTheDocument()
   })

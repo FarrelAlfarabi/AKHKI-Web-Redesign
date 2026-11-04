@@ -1,5 +1,5 @@
-// Content is placeholder until AKHKI supplies real text, photos and the logo file.
-// Contact details and counts come from the current akhki.or.id.
+// Content is placeholder until KHN supplies real text, photos and the logo file.
+// Contact details and counts come from the current situs asli.
 
 export const MAIN_MENU = [
   { label: 'Profile Organisasi', to: '/tentang', group: ['/tentang', '/struktur', '/pengurus'] },
@@ -27,10 +27,10 @@ export const CONTACT = {
   floor: 'Lantai 9, Suite 998',
   street: 'Jl. Jend. Sudirman Kav.24',
   city: 'Jakarta Selatan - 12920',
-  phone: '(021) 2279 0440',
-  whatsappDisplay: '+62 822 6011 8868',
-  whatsappUrl: 'https://wa.me/6282260118868',
-  email: 'sekretariat@akhki.or.id',
+  phone: '(021) 0000 0000',
+  whatsappDisplay: '+62 800 0000 0000',
+  whatsappUrl: 'https://wa.me/628000000000',
+  email: 'sekretariat@contoh.id',
   mapsUrl:
     'https://www.google.com/maps/search/?api=1&query=Tamara+Center+Jl.+Jend.+Sudirman+Kav.+24+Jakarta',
 }
@@ -58,7 +58,7 @@ export const PENGURUS_GROUPS = [
   'Semua',
   'Badan Pengurus Harian',
   'Dewan Pembina & Penasihat',
-  'Ahli Internal AKHKI',
+  'Ahli Internal KHN',
   'Bidang Keanggotaan',
   'Bidang Pendidikan & Pelatihan Berkelanjutan',
   'Bidang Kerjasama Antarlembaga & Hubungan Luar Negeri',
@@ -93,9 +93,9 @@ export function initials(name) {
 export const KEGIATAN_TYPES = ['Semua', 'Seminar', 'FGD', 'Audiensi', 'Webinar']
 
 export const KEGIATAN = [
-  { day: '7', month: 'Jul 2025', type: 'Audiensi', title: 'AKHKI Berikan Masukan Substantif dalam Pembahasan Rancangan Perubahan Permenkumham No. 38 Tahun 2018 tentang Permohonan Paten' },
+  { day: '7', month: 'Jul 2025', type: 'Audiensi', title: 'KHN Berikan Masukan Substantif dalam Pembahasan Rancangan Perubahan Permenkumham No. 38 Tahun 2018 tentang Permohonan Paten' },
   { day: 'Mei', month: '2026', type: 'Audiensi', title: 'Konsultasi penyusunan Peraturan Menteri tentang Konsultan Kekayaan Intelektual' },
-  { day: '15', month: 'Jun 2026', type: 'FGD', title: 'AKHKI Selenggarakan FGD Kupas Tuntas Permenkum No. 5 dan No. 6 Tahun 2026 tentang Merek dan Paten' },
+  { day: '15', month: 'Jun 2026', type: 'FGD', title: 'KHN Selenggarakan FGD Kupas Tuntas Permenkum No. 5 dan No. 6 Tahun 2026 tentang Merek dan Paten' },
   { day: '5', month: 'Sep 2026', type: 'Seminar', title: 'Konsultan KI di Era AI: Menavigasi Perubahan Hukum, Teknologi, dan Praktik Profesi (bersama HKTDC)' },
 ]
 
@@ -103,12 +103,12 @@ export const PUSTAKA_CATEGORIES = ['Semua', 'Materi Seminar', 'Materi Lain']
 
 export const DOCS = [
   { title: 'Materi Gelar Wicara 5 Mei 2021 Updated (untuk peserta)', category: 'Materi Seminar', size: '37.27 MB', downloads: '5 downloads' },
-  { title: 'Kompilasi Materi Webinar AKHKI 7 April 2021', category: 'Materi Seminar', size: '12.84 MB', downloads: '1 download' },
-  { title: 'AKHKI Kode Etik 22.08.21', category: 'Materi Lain', size: '[placeholder] ukuran' },
+  { title: 'Kompilasi Materi Webinar KHN 7 April 2021', category: 'Materi Seminar', size: '12.84 MB', downloads: '1 download' },
+  { title: 'KHN Kode Etik 22.08.21', category: 'Materi Lain', size: '[placeholder] ukuran' },
 ]
 
-export const SITE_NAME = 'AKHKI'
-export const HOME_TITLE = 'AKHKI | Asosiasi Konsultan Hak Kekayaan Intelektual Indonesia'
+export const SITE_NAME = 'KHN'
+export const HOME_TITLE = 'KHN | Perkumpulan Konsultan HKI Nusantara'
 
 export const PAGE_TITLES = {
   '/tentang': 'Profile Organisasi',

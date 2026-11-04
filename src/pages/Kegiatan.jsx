@@ -11,7 +11,7 @@ export function Kegiatan() {
   const rows = [...KEGIATAN].reverse().filter((k) => type === 'Semua' || k.type === type)
   return (
     <>
-      <PageStage ghost="KEGIATAN" crumbs={[{ label: 'Kegiatan Bulanan' }]} title="Kegiatan Bulanan AKHKI" sub="Berita, seminar, FGD dan audiensi, dicatat per bulan." />
+      <PageStage ghost="KEGIATAN" crumbs={[{ label: 'Kegiatan Bulanan' }]} title="Kegiatan Bulanan KHN" sub="Berita, seminar, FGD dan audiensi, dicatat per bulan." />
       <div className="band wrap stack" style={{ gap: 32 }}>
         <Link className="nfeat wide" to="/artikel">
           <span className="wrapimg"><span className="nimg">[placeholder] Foto berita utama</span></span>

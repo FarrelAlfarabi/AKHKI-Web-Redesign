@@ -28,7 +28,7 @@ export function Kontak() {
         <div className="cgrid">
           <div className="ccard"><small>Alamat</small><address><b>Tamara Center Lantai 9, Suite 998<br />Jl. Jend. Sudirman Kav. 24<br />Jakarta Selatan - 12920</b></address></div>
           <div className="ccard"><small>Telepon</small><b>{CONTACT.phone}</b><CopyButton value={CONTACT.phone} label="Salin nomor" /></div>
-          <div className="ccard"><small>Halo AKHKI (WhatsApp)</small><b>{CONTACT.whatsappDisplay}</b><a className="btn blue" href={CONTACT.whatsappUrl} target="_blank" rel="noopener noreferrer">Chat sekarang</a></div>
+          <div className="ccard"><small>Halo KHN (WhatsApp)</small><b>{CONTACT.whatsappDisplay}</b><a className="btn blue" href={CONTACT.whatsappUrl} target="_blank" rel="noopener noreferrer">Chat sekarang</a></div>
           <div className="ccard"><small>Email</small><b>{CONTACT.email}</b><CopyButton value={CONTACT.email} label="Salin email" /></div>
         </div>
         <div className="two" style={{ gap: 24, alignItems: 'stretch' }}>
@@ -88,7 +88,7 @@ export function Masuk() {
           </div>
           <div className="login-row">
             <label className="inline"><input type="checkbox" name="remember" /> Remember me</label>
-            <a href="mailto:sekretariat@akhki.or.id?subject=Lupa%20password%20AKHKI">Lupa Password?</a>
+            <a href="mailto:sekretariat@contoh.id?subject=Lupa%20password%20KHN">Lupa Password?</a>
           </div>
           <button className="btn red big" type="submit">Masuk</button>
           <p className="msg" role="status">{msg}</p>

@@ -29,7 +29,7 @@ export default function Layout() {
       </div>
       <header className="site">
         <div className="wrap top">
-          <Link className="logo" to="/" aria-label="AKHKI, ke beranda">
+          <Link className="logo" to="/" aria-label="KHN, ke beranda">
             <img src="/logo.png" alt="" width="134" height="56" />
           </Link>
           <nav className="util" aria-label="Menu anggota">
@@ -79,7 +79,7 @@ export default function Layout() {
                 {CONTACT.phone}
               </div>
               <div>
-                <b>Halo AKHKI:</b>
+                <b>Halo KHN:</b>
                 <br />
                 {CONTACT.whatsappDisplay}
               </div>
