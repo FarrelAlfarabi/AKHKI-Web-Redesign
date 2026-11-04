@@ -10,7 +10,7 @@ export default function Pustaka() {
   const docs = DOCS.filter((d) => (category === 'Semua' || d.category === category) && d.title.toLowerCase().includes(q))
   return (
     <>
-      <PageStage ghost="PUSTAKA" crumbs={[{ label: 'Pustaka' }]} title="Pustaka AKHKI" sub="Pesatnya perkembangan hukum di bidang kekayaan intelektual perlu diimbangi dengan peningkatan literasi yang kontinu. AKHKI menyediakan materi yang dibuat oleh para profesional terpercaya." />
+      <PageStage ghost="PUSTAKA" crumbs={[{ label: 'Pustaka' }]} title="Pustaka KHN" sub="Pesatnya perkembangan hukum di bidang kekayaan intelektual perlu diimbangi dengan peningkatan literasi yang kontinu. KHN menyediakan materi yang dibuat oleh para profesional terpercaya." />
       <div className="band wrap stack" style={{ gap: 24 }}>
         <div className="msearch">
           <label htmlFor="psearch">Cari dokumen

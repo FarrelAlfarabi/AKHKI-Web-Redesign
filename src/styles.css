@@ -1,6 +1,6 @@
 /* Concept: "registry in motion". Navy stage pages with a ghost wordmark and slow grid drift, white content, red used once per view.
    Motion is transform/opacity only, CSS-driven (scroll-driven where supported), off under reduced motion.
-   PALETTE sampled from the original akhki.or.id (do not change):
+   PALETTE sampled from the original situs asli (do not change):
    navy #232d50 | grey #e5e5e5 | red #c1282a | blue #005aee | ink #3c3c3c | soft #f1f4fa. Single light look by choice. */
 :root{
   --navy:#232d50; --navy2:#232d50; --grey:#e5e5e5; --red:#c1282a; --blue:#005aee; --ink:#3c3c3c; --soft:#f1f4fa;
@@ -95,7 +95,7 @@ main:focus{outline:none}
 /* hero */
 .hx{position:relative;background:var(--navy);color:var(--white);overflow:hidden;isolation:isolate}
 .hx::before{content:"";position:absolute;inset:0 -96px;z-index:-1;background:repeating-linear-gradient(90deg,rgba(255,255,255,.045) 0 1px,transparent 1px 96px);animation:drift 24s linear infinite}
-.hx::after{content:"AKHKI";position:absolute;right:-2%;bottom:-.12em;z-index:-1;font:800 clamp(8rem,27vw,23rem)/1 var(--f);color:rgba(255,255,255,.05);letter-spacing:-.05em}
+.hx::after{content:"KHN";position:absolute;right:-2%;bottom:-.12em;z-index:-1;font:800 clamp(8rem,27vw,23rem)/1 var(--f);color:rgba(255,255,255,.05);letter-spacing:-.05em}
 .shape{position:absolute;z-index:-1;border:2px solid rgba(255,255,255,.14);animation:spin 40s linear infinite}
 .shape.a{width:220px;height:220px;right:30%;top:-70px}
 .shape.b{width:120px;height:120px;left:6%;bottom:90px;border-color:rgba(193,40,42,.55);animation-duration:55s;animation-direction:reverse}

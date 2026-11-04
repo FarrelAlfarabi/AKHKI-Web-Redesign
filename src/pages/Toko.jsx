@@ -4,7 +4,7 @@ import { CONTACT } from '../data/content'
 export default function Toko() {
   return (
     <>
-      <PageStage ghost="TOKO" crumbs={[{ label: 'Toko' }]} title="Toko AKHKI" sub="Pesan lewat WhatsApp sekretariat. Pembayaran dan pengiriman dikonfirmasi lewat chat." />
+      <PageStage ghost="TOKO" crumbs={[{ label: 'Toko' }]} title="Toko KHN" sub="Pesan lewat WhatsApp sekretariat. Pembayaran dan pengiriman dikonfirmasi lewat chat." />
       <div className="band wrap stack" style={{ gap: 24 }}>
         <div className="prods">
           {[1, 2, 3, 4].map((i) => (
@@ -20,7 +20,7 @@ export default function Toko() {
             </article>
           ))}
         </div>
-        <p className="note">[placeholder] Halaman baru yang belum ada di situs asli. Nama produk, harga dan stok perlu dari AKHKI. Bayar online bisa ditambah nanti.</p>
+        <p className="note">[placeholder] Halaman baru yang belum ada di situs asli. Nama produk, harga dan stok perlu dari KHN. Bayar online bisa ditambah nanti.</p>
       </div>
     </>
   )

@@ -5,7 +5,7 @@ import { renderAt } from '../test/renderApp'
 describe('Kegiatan Bulanan', () => {
   it('lists the four known activities, newest first', () => {
     renderAt('/kegiatan')
-    expect(screen.getByRole('heading', { level: 1, name: 'Kegiatan Bulanan AKHKI' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'Kegiatan Bulanan KHN' })).toBeInTheDocument()
     const list = screen.getByRole('list', { name: 'Daftar kegiatan' })
     const items = within(list).getAllByRole('listitem')
     expect(items).toHaveLength(4)
@@ -30,7 +30,7 @@ describe('Kegiatan Bulanan', () => {
     await userEvent.click(screen.getByRole('link', { name: /Masukan Substantif/ }))
     expect(screen.getByRole('heading', { level: 1, name: /Masukan Substantif/ })).toBeInTheDocument()
     await userEvent.click(screen.getByRole('link', { name: /Kembali ke Kegiatan Bulanan/ }))
-    expect(screen.getByRole('heading', { level: 1, name: 'Kegiatan Bulanan AKHKI' })).toBeInTheDocument()
+    expect(screen.getByRole('heading', { level: 1, name: 'Kegiatan Bulanan KHN' })).toBeInTheDocument()
   })
 })
 
@@ -45,7 +45,7 @@ describe('Pustaka', () => {
     await userEvent.type(screen.getByRole('searchbox', { name: 'Cari dokumen' }), 'kode etik')
     const docs = screen.getAllByRole('article')
     expect(docs).toHaveLength(1)
-    expect(docs[0]).toHaveTextContent('AKHKI Kode Etik 22.08.21')
+    expect(docs[0]).toHaveTextContent('KHN Kode Etik 22.08.21')
   })
 
   it('filters by category and reports an empty search', async () => {
@@ -69,7 +69,7 @@ describe('Toko', () => {
     const links = screen.getAllByRole('link', { name: /Pesan via WhatsApp/ })
     expect(links).toHaveLength(4)
     for (const l of links) {
-      expect(l).toHaveAttribute('href', 'https://wa.me/6282260118868')
+      expect(l).toHaveAttribute('href', 'https://wa.me/628000000000')
       expect(l).toHaveAttribute('target', '_blank')
       expect(l.getAttribute('rel')).toContain('noopener')
     }

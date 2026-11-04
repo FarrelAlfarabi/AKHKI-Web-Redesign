@@ -23,7 +23,7 @@ export function Anggota() {
 
   return (
     <>
-      <PageStage ghost="ANGGOTA" crumbs={[{ label: 'Keanggotaan' }]} title="Data Anggota AKHKI" sub="Temukan konsultan KI anggota AKHKI berdasarkan nama atau ID Konsultan." />
+      <PageStage ghost="ANGGOTA" crumbs={[{ label: 'Keanggotaan' }]} title="Data Anggota KHN" sub="Temukan konsultan KI anggota KHN berdasarkan nama atau ID Konsultan." />
       <div className="band wrap">
         <form className="msearch" role="search" aria-label="Cari anggota" onSubmit={(e) => e.preventDefault()}>
           <label htmlFor="msearch">Kata kunci<input id="msearch" name="q" type="search" placeholder="Nama atau bidang" value={keyword} onChange={reset(setKeyword)} /></label>
@@ -71,12 +71,12 @@ export function Anggota() {
 export function KodeEtik() {
   return (
     <>
-      <PageStage ghost="ETIK" crumbs={[{ label: 'Peraturan' }]} title="Kode Etik Konsultan KI" sub="Pedoman profesi bagi seluruh konsultan kekayaan intelektual anggota AKHKI." />
+      <PageStage ghost="ETIK" crumbs={[{ label: 'Peraturan' }]} title="Kode Etik Konsultan KI" sub="Pedoman profesi bagi seluruh konsultan kekayaan intelektual anggota KHN." />
       <div className="band wrap two" style={{ alignItems: 'flex-start', gap: 32 }}>
         <div className="pdfbox">[placeholder]<br />Penampil PDF Kode Etik (20 halaman) seperti di situs asli</div>
         <div className="ccard" style={{ flex: '1 1 260px' }}>
           <small>Dokumen</small>
-          <b>AKHKI Kode Etik 22.08.21</b>
+          <b>KHN Kode Etik 22.08.21</b>
           <span className="muted-s">PDF, 20 halaman</span>
           <button type="button" className="btn blue" disabled title="Pratinjau, belum ada file" style={{ marginTop: 8 }}>Unduh Kode Etik</button>
         </div>

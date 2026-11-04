@@ -7,16 +7,16 @@ describe('Contact Us', () => {
     renderAt('/kontak')
     expect(screen.getByRole('heading', { level: 1, name: 'Contact Us' })).toBeInTheDocument()
     expect(screen.getAllByText(/Tamara Center/).length).toBeGreaterThan(0)
-    expect(screen.getAllByText('(021) 2279 0440').length).toBeGreaterThan(0)
-    expect(screen.getByRole('link', { name: 'Chat sekarang' })).toHaveAttribute('href', 'https://wa.me/6282260118868')
-    expect(screen.getAllByText('sekretariat@akhki.or.id').length).toBeGreaterThan(0)
+    expect(screen.getAllByText('(021) 0000 0000').length).toBeGreaterThan(0)
+    expect(screen.getByRole('link', { name: 'Chat sekarang' })).toHaveAttribute('href', 'https://wa.me/628000000000')
+    expect(screen.getAllByText('sekretariat@contoh.id').length).toBeGreaterThan(0)
   })
 
   it('copies the phone number and confirms it', async () => {
     const user = userEvent.setup()
     renderAt('/kontak')
     await user.click(screen.getByRole('button', { name: 'Salin nomor' }))
-    expect(await navigator.clipboard.readText()).toBe('(021) 2279 0440')
+    expect(await navigator.clipboard.readText()).toBe('(021) 0000 0000')
     expect(screen.getByRole('button', { name: 'Tersalin' })).toBeInTheDocument()
   })
 

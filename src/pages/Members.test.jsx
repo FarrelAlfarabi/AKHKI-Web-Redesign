@@ -43,7 +43,7 @@ describe('Data Anggota', () => {
 
   it('never shows real email addresses on sample cards', () => {
     renderAt('/anggota')
-    expect(document.body.textContent).not.toMatch(/[\w.-]+@(?!akhki\.or\.id)[\w.-]+\.\w+/)
+    expect(document.body.textContent).not.toMatch(/[\w.-]+@(?!contoh\.id)[\w.-]+\.\w+/)
   })
 })
 
@@ -51,7 +51,7 @@ describe('Kode Etik', () => {
   it('names the document and reserves space for the PDF viewer', () => {
     renderAt('/kode-etik')
     expect(screen.getByRole('heading', { level: 1, name: 'Kode Etik Konsultan KI' })).toBeInTheDocument()
-    expect(screen.getByText('AKHKI Kode Etik 22.08.21')).toBeInTheDocument()
+    expect(screen.getByText('KHN Kode Etik 22.08.21')).toBeInTheDocument()
     expect(screen.getByText(/Penampil PDF Kode Etik/)).toBeInTheDocument()
   })
 })
