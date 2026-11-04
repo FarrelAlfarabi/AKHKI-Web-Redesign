@@ -23,7 +23,7 @@ export function Tentang() {
               <li><b>15 Sep 2006</b><span>KHN didirikan.</span></li>
               <li><b>2024 - 2028</b><span>Masa kepengurusan saat ini.</span></li>
             </ol>
-            <p>Sejak berdiri, KHN tumbuh dari sekelompok konsultan yang ingin profesi mereka punya aturan main dan suara bersama. Kini KHN menaungi ribuan konsultan KI di seluruh Indonesia dan menjadi mitra kementerian dalam penyusunan aturan.</p>
+            <p>[Contoh teks] Ringkasan perjalanan organisasi, jumlah anggota, dan kerja sama dengan lembaga lain ditulis di sini.</p>
           </section>
           <div className="two rv" style={{ gap: 48, alignItems: 'flex-start' }}>
             <section className="stack" aria-labelledby="visi-h">
