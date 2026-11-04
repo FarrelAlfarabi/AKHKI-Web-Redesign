@@ -20,10 +20,10 @@ describe('Data Anggota', () => {
   it('finds a member by name and goes back to page one', async () => {
     renderAt('/anggota')
     await userEvent.click(screen.getByRole('button', { name: 'Halaman 2' }))
-    await userEvent.type(screen.getByLabelText('Nama Lengkap'), 'Anggota 3')
+    await userEvent.type(screen.getByLabelText('Nama Lengkap'), 'Citra')
     const cards = screen.getAllByRole('article')
     expect(cards).toHaveLength(1)
-    expect(cards[0]).toHaveTextContent('[contoh] Nama Anggota 3')
+    expect(cards[0]).toHaveTextContent('Citra Maharani, S.H.')
   })
 
   it('says so when nobody matches, and Reset brings the list back', async () => {
@@ -38,7 +38,7 @@ describe('Data Anggota', () => {
   it('sorts Z to A', async () => {
     renderAt('/anggota')
     await userEvent.selectOptions(screen.getByLabelText('Urutkan berdasarkan'), 'za')
-    expect(screen.getAllByRole('article')[0]).toHaveTextContent('Nama Anggota 8')
+    expect(screen.getAllByRole('article')[0]).toHaveTextContent('Hendra Wijaya')
   })
 
   it('never shows real email addresses on sample cards', () => {
@@ -52,6 +52,6 @@ describe('Kode Etik', () => {
     renderAt('/kode-etik')
     expect(screen.getByRole('heading', { level: 1, name: 'Kode Etik Konsultan KI' })).toBeInTheDocument()
     expect(screen.getByText('KHN Kode Etik 22.08.21')).toBeInTheDocument()
-    expect(screen.getByText(/Penampil PDF Kode Etik/)).toBeInTheDocument()
+    expect(screen.getByText("KODE ETIK KONSULTAN KI")).toBeInTheDocument()
   })
 })

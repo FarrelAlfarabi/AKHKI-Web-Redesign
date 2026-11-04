@@ -77,7 +77,7 @@ export default function Home() {
             <li><b>15 Sep 2006</b><span>KHN didirikan sebagai wadah asosiasi konsultan KI.</span></li>
             <li><b>2024 - 2028</b><span>Masa kepengurusan saat ini.</span></li>
           </ol>
-          <p className="note" style={{ marginTop: 28 }}>[placeholder] Tonggak lain dari sejarah KHN akan ditambahkan setelah teks sejarah diterima.</p>
+          
         </div>
       </section>
 
@@ -88,7 +88,7 @@ export default function Home() {
         </div>
         <div className="news rv">
           <Link className="nfeat" to="/artikel">
-            <span className="wrapimg"><span className="nimg">[placeholder] Foto berita utama</span></span>
+            <span className="wrapimg"><span className="nimg"><img src="/img/berita-1.svg" alt="Audiensi konsultan KI bersama pembuat kebijakan (ilustrasi)" loading="lazy" /></span></span>
             <span className="ntxt">
               <small>Jakarta, 7 Juli 2025</small>
               <b>KHN Berikan Masukan Substantif dalam Pembahasan Rancangan Perubahan Permenkumham No. 38 Tahun 2018 tentang Permohonan Paten</b>

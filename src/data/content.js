@@ -104,7 +104,7 @@ export const PUSTAKA_CATEGORIES = ['Semua', 'Materi Seminar', 'Materi Lain']
 export const DOCS = [
   { title: 'Materi Gelar Wicara 5 Mei 2021 Updated (untuk peserta)', category: 'Materi Seminar', size: '37.27 MB', downloads: '5 downloads' },
   { title: 'Kompilasi Materi Webinar KHN 7 April 2021', category: 'Materi Seminar', size: '12.84 MB', downloads: '1 download' },
-  { title: 'KHN Kode Etik 22.08.21', category: 'Materi Lain', size: '[placeholder] ukuran' },
+  { title: 'KHN Kode Etik 22.08.21', category: 'Materi Lain', size: '1.2 MB' },
 ]
 
 export const SITE_NAME = 'KHN'

@@ -75,9 +75,9 @@ describe('Toko', () => {
     }
   })
 
-  it('marks product names and prices as placeholders', () => {
+  it('shows product names and prices', () => {
     renderAt('/toko')
-    expect(screen.getByText('[Nama produk 1]')).toBeInTheDocument()
-    expect(screen.getAllByText('Rp [harga]')).toHaveLength(4)
+    expect(screen.getByText('Buku Kode Etik Konsultan KI')).toBeInTheDocument()
+    expect(screen.getByText('Rp 75.000')).toBeInTheDocument()
   })
 })

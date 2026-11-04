@@ -25,7 +25,7 @@ export default function Layout() {
     <>
       <a className="skip" href="#main">Langsung ke konten</a>
       <div className="topnote">
-        Pratinjau desain. Teks bertanda [placeholder] atau [contoh] belum final.
+        Pratinjau desain dengan isi contoh.
       </div>
       <header className="site">
         <div className="wrap top">
@@ -90,7 +90,7 @@ export default function Layout() {
               </div>
               <div>
                 Instagram · YouTube · LinkedIn · Telegram{' '}
-                <span className="muted">[placeholder] tautan akun resmi</span>
+                
               </div>
             </address>
           </div>

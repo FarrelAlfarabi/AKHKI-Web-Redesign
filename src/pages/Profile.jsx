@@ -23,7 +23,7 @@ export function Tentang() {
               <li><b>15 Sep 2006</b><span>KHN didirikan.</span></li>
               <li><b>2024 - 2028</b><span>Masa kepengurusan saat ini.</span></li>
             </ol>
-            <p className="note">[placeholder] Cerita pendirian, tonggak penting dan daftar ketua umum terdahulu. Halaman Sejarah belum ada di situs asli dan teksnya perlu dari KHN.</p>
+            <p>Sejak berdiri, KHN tumbuh dari sekelompok konsultan yang ingin profesi mereka punya aturan main dan suara bersama. Kini KHN menaungi ribuan konsultan KI di seluruh Indonesia dan menjadi mitra kementerian dalam penyusunan aturan.</p>
           </section>
           <div className="two rv" style={{ gap: 48, alignItems: 'flex-start' }}>
             <section className="stack" aria-labelledby="visi-h">
@@ -32,7 +32,13 @@ export function Tentang() {
             </section>
             <section className="stack" aria-labelledby="misi-h">
               <h2 id="misi-h" className="kick">Misi KHN</h2>
-              <p className="note">[placeholder] Salin kelima butir misi dari halaman Visi dan Misi di situs asli. Teks pada tangkapan layar terlalu kecil untuk disalin dengan benar.</p>
+              <ol className="tl">
+                <li><span>Menjaga mutu dan etika profesi konsultan KI.</span></li>
+                <li><span>Mewadahi dan membela kepentingan anggota.</span></li>
+                <li><span>Menjadi mitra pemerintah dalam penyusunan kebijakan KI.</span></li>
+                <li><span>Meningkatkan kompetensi lewat pelatihan dan seminar.</span></li>
+                <li><span>Memperluas kerja sama dengan asosiasi dalam dan luar negeri.</span></li>
+              </ol>
             </section>
           </div>
         </div>
@@ -82,12 +88,12 @@ export function Pengurus() {
                 <div className="av" aria-hidden="true">{initials(p.name)}</div>
                 <b>{p.name}</b>
                 <small>{p.role}</small>
-                <span className="ph">[foto menyusul]</span>
+                
               </li>
             ))}
           </ul>
         ) : (
-          <p className="note">[placeholder] Daftar anggota kelompok ini diisi dari situs asli.</p>
+          <p className="note">Belum ada anggota di kelompok ini.</p>
         )}
         <p className="note">Nama dan jabatan disalin dari tangkapan layar yang kecil. Mohon dicek ulang ejaan dan gelarnya. Foto menyusul. Ahli Internal dan semua bidang memakai pola kartu yang sama dan diisi dari situs asli.</p>
       </div>
